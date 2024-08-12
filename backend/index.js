@@ -8,7 +8,11 @@ const app = express();
 const PORT = process.env.PORT || 4444;
 const cookieParser = require('cookie-parser');
 app.use(cors({
-    origin: [], // React frontend URL
+    origin: ["https://vercel.com/sumeets-projects-a043029e/bahi-khata/3mXia2JbEXCZaJVnjzDLWDyHdfxu",
+        "https://bahi-khata-sumeets-projects-a043029e.vercel.app",
+        "https://bahi-khata-git-main-sumeets-projects-a043029e.vercel.app",
+        "https://bahi-khata-liard.vercel.app"
+    ], // React frontend URL
     methods: ['GET', 'POST'], // Allowed HTTP methods
     credentials: true // Allow cookies to be sent/received
   }));
